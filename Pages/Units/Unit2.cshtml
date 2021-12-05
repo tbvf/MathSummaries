@@ -1,0 +1,101 @@
+﻿@page
+@model MathSummaries.Pages.Units.Unit2Model
+@{
+    ViewData["Title"] = "Unit 2";
+}
+
+<h1 style="font-family: 'Supermercado One', cursive;">@ViewData["Title"]</h1>
+
+<p>In this Unit, we learned how to simplify radicals, use factoring & the quadratic formula to solve quadratic functions, how to find the min/max of a quadratic, and how to find a quadratic function from a stat plot on your ti-84 calculator.</p>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/U7AXF75rC00/maxresdefault.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title normal">Radicals</h5>
+                    <p class="card-text">
+                        Remember- √a ∙ √b = √ab
+                        <br />
+                        <br />
+                        <br />
+                        We learned how to turn radicals into a single number or simplifying a radical as far as it can go if it isn't rational. and how to take a radical out of the denominator.
+                        <br />
+                        <br />
+                        <strong>Simplify</strong>- To Simplify a radical you must find a number when my multiplied by itself (root) times results in the number under the radical or a factor of it until no more factors can be simplified. When simplifying a variable out of an even radical you need to take the absolute value of it.
+                        <br />
+                        <br />
+                        <strong>Examples</strong>-
+                        <br />
+                        √25 --> 5
+                        <br />
+                        √72 --> √36*2 --> 6√2
+                        <br />
+                        <span style='font-size:20px;color:rgb(0, 0, 0);font-style:normal;font-weight:normal;'>&#8731;</span>8 --> 2
+                        <br />
+                        <span style='font-size:20px;color:rgb(0, 0, 0);font-style:normal;font-weight:normal;'>&#8731;</span>135 --> <span style='font-size:20px;color:rgb(0, 0, 0);font-style:normal;font-weight:normal;'>&#8731;</span>27*5 --> 3<span style='font-size:20px;color:rgb(0, 0, 0);font-style:normal;font-weight:normal;'>&#8731;</span>5
+                        <br />
+                        √x<sup>2</sup> --> |x|
+                        <br />
+                        √x<sup>3</sup>y<sup>4</sup> --> √x*x<sup>2</sup>y<sup>4</sup> --> |xy<sup>2</sup>|√x
+                        <br />
+                        <br />
+                        <strong>Rationalize</strong>- When there is a radical in the denominator it is nessesary to rationalize it by removing it from the denominator. To do this you must multiply both the numerator and the denominator by the radical. In the denominator what is left is the number under the radical, and you essentially have moved the radical to the numerator making it easier to work with.
+                        <br />
+                        <br />
+                        <strong>Examples</strong>-
+                        <br />
+                        2/√2 --> 2√2/2 --> √2
+                        <br />
+                        x<sup>2</sup>y<sup>3</sup>/√xy<sup>3</sup> --> x<sup>2</sup>y<sup>3</sup>√xy<sup>3</sup>/xy<sup>3</sup> --> x<sup>2</sup>y<sup>3</sup>|y|√xy/xy<sup>3</sup> --> x|y|√xy
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Ffiles.betterlesson.com%2Ffiles2%2Fuploads100%2F1w36m%2Fpublic%2Fd0302cc96e41a7650ece154f51d06c0e4dbbe975402370cbb6a22a17d2a88cf0.png&f=1&nofb=1" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title normal">Quadratics</h5>
+                    <p class="card-text">
+                        Standard Form- f(x) = ax<sup>2</sup>+bx+c
+                        <br />
+                        Example of Factored Form- (x+3)(x+5)
+                        <br />
+                        Quadratic Formula- x = -b±√b<sup>2</sup>-4ac/2a
+                        <br />
+                        Axis Of Symmetry Formula- x = -b/2a
+                        <br />
+                        <br />
+                        We learned how to solve quadratic functions by factoring and using the quadratic formula, and how to find the min or max (vertex) of a quadratic function.
+                        <br />
+                        <br />
+                        <strong>Solving</strong>- To find the roots a quadratic function you need to set f(x) to zero, and either factor or if factoring isn't possible in the situation use the quadratic formula.
+                        <br />
+                        <br />
+                        <strong>Factoring</strong>- To factor a quadratic function after setting f(x) to zero, if the A value is 1 find the two numbers that add to the B value and multiply to the C value and sustitute them like this 0 = (x + value1)(x+value2) then find what makes each term zero, if A is not 1, then find the two numbers that add to the B value and multiply to the product of the A and C value, then split of the B value into those numbers, group, and then factor.
+                        <br />
+                        <br />
+                        <strong>Examples</strong>-
+                        <br />
+                        f(x) = x<sup>2</sup>+3x+3 --> 0 = x<sup>2</sup>+4x+3 --> 0 = (x+3)(x+1) --> x = -3, x = -1
+                        <br />
+                        <br />
+                        f(x) =  2x<sup>2</sup>+10x+12 --> 0 = 2x<sup>2</sup>+10x+12 --> 0 = 2x<sup>2</sup>+6x+4x+12 --> 0 = (2x<sup>2</sup>+6x)+(4x+12) --> 0 = 2x(x+3)+4(x+3) --> 0 = (2x+4)(x+3) --> x = -2, x = -3
+                        <br />
+                        <br />
+                        <strong>Finding Min/Max</strong>- to find the minimum/maximum or the vertex of a quadratic function, plug the numbers into the axis of symmetry formula, and then plug in that number for x into the original function and solve for y.
+                        <br />
+                        <br />
+                        <strong>Examples</strong>- 
+                        <br />
+                        f(x) = x<sup>2</sup>+3x+3 --> x = -3/2 --> f(-3/2) = -3/2<sup>2</sup>+3(-3/2)+3 --> f(-3/2) = -9/4-9/2+3 --> f(-3/2) = -27/4 + 3 --> f(-3/2) = -15/4
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
