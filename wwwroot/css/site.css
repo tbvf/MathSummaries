@@ -32,6 +32,10 @@ a {
     font-family: 'Supermercado One', cursive;
 }
 
+.card-text:not(.normal){
+    color: white;
+}
+
 h1 {
     font-family: 'Supermercado One', cursive;
 }
@@ -41,10 +45,17 @@ h1 {
         margin: 5px;
         max-width: 50rem;
     }
+}
 
-    .card-title:not(.normal) {
-        font-size: xx-large;
-        color: white;
-        font-family: 'Supermercado One', cursive;
-    }
+.dark-mode {
+    filter: invert(1);
+    background-color:  black;
+}
+
+.uninvert {
+    filter: invert(1);
+}
+
+.navbar {
+    background-color: #e3f2fd;
 }
