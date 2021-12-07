@@ -14,10 +14,10 @@ window.onload = function exampleFunction() {
     const theme = localStorage.getItem('Dark Mode');
     if (theme == 'On') {
         checkbox.checked = true;
-        document.documentElement.theme = "darkmode";
+        document.documentElement.setAttribute('theme', 'darkmode');
     } else {
         checkbox.checked = false;
-        document.documentElement.theme = "lightmode";
+        document.documentElement.setAttribute('theme', 'lightmode');
     }
 }
 
