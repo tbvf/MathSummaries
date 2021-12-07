@@ -2,16 +2,10 @@
 
 checkbox.addEventListener('change', function () {
     if (this.checked) {
-        document.documentElement.classList.add('dark-mode');
-        document.querySelectorAll('.un-inverted').forEach((result) => {
-            result.classList.add('uninvert');
-        });
+        document.documentElement.setAttribute('theme', 'darkmode');
         window.localStorage.setItem('Dark Mode', 'On');
     } else {
-        document.documentElement.classList.remove('dark-mode');
-        document.querySelectorAll('.un-inverted').forEach((result) => {
-            result.classList.remove('uninvert');
-        });
+        document.documentElement.setAttribute('theme', 'lightmode');
         window.localStorage.setItem('Dark Mode', 'Off');
     }
 });
@@ -20,16 +14,10 @@ window.onload = function exampleFunction() {
     const theme = localStorage.getItem('Dark Mode');
     if (theme == 'On') {
         checkbox.checked = true;
-        document.documentElement.classList.add('dark-mode');
-        document.querySelectorAll('.un-inverted').forEach((result) => {
-            result.classList.add('uninvert');
-        });
+        document.documentElement.theme = "darkmode";
     } else {
         checkbox.checked = false;
-        document.documentElement.classList.remove('dark-mode');
-        document.querySelectorAll('.un-inverted').forEach((result) => {
-            result.classList.remove('uninvert');
-        });
+        document.documentElement.theme = "lightmode";
     }
 }
 

@@ -1,6 +1,25 @@
 html {
     font-size: 14px;
+    --nav-clr: #e3f2fd;
+    --background-clr: white;
+    --text-clr: black;
+    --nav-text: invert(0);
+    --card-clr: white;
+    --clr-success: #198754;
+    --clr-info: #0dcaf0;
+    --clr-danger: #dc3545;
 }
+
+    html[theme="darkmode"] {
+        --nav-clr: #042747;
+        --background-clr: black;
+        --text-clr: white;
+        --nav-text: invert(1);
+        --card-clr: #1c2233;
+        --clr-success: #0c4329;
+        --clr-info: #066578;
+        --clr-danger: #74141d;
+    }
 
 @media (min-width: 768px) {
     html {
@@ -15,7 +34,20 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-color: var(--background-clr);
+    color: var(--text-clr);
 }
+
+.nav-link{
+    filter: var(--nav-text);
+}
+
+.navbar-brand{
+    filter: var(--nav-text);
+}
+
+
+
 
 a {
     text-decoration: none;
@@ -24,6 +56,8 @@ a {
 .card {
     margin: 15px;
     max-width: 25rem;
+    background-color: var(--card-clr);
+    color: var(--text-clr);
 }
 
 .card-title:not(.normal) {
@@ -47,15 +81,19 @@ h1 {
     }
 }
 
-.dark-mode {
-    filter: invert(1);
-    background-color:  black;
+header {
+    background-color: var(--nav-clr);
+    color: var(--text-clr);
 }
 
-.uninvert {
-    filter: invert(1);
+.success-card {
+    background-color: var(--clr-success);
 }
 
-.navbar {
-    background-color: #e3f2fd;
+.info-card{
+    background-color: var(--clr-info);
+}
+
+.danger-card {
+    background-color: var(--clr-danger);
 }
